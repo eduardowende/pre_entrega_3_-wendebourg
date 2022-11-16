@@ -1,0 +1,15 @@
+
+@use "../partes/variables";
+@use "../componentes";
+@use "../globales";
+
+/* Uso de variables globales */
+
+.navcolor{
+    background-color: variables.$nav-bg-color;
+    color: variables.$nav-color;
+}
+.tamanio_img{  
+   width: 40rem;
+   height: auto;
+} 

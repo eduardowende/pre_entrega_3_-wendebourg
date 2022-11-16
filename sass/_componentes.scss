@@ -1,0 +1,104 @@
+
+/* @use "../partes/variables"; */
+/* @use "./globales";  */
+
+@mixin margen($uno, $dos) {
+    margin: $uno $dos;    
+ }
+
+ .div_margen_bajo{
+    
+    margin-top: 100px
+ }
+.art_margin{
+    @include margen(40px,0px);
+
+    /* margin: 40px 0px; */
+}
+.ser_art_margin{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.margin_div{
+    @include margen(88px, 0px);    
+}
+.margin_div_grid{
+     margin-bottom: 40px;
+}
+
+/* .subtitle-color {
+    color: rgb(231, 4, 4);
+  } */
+.botones{
+      justify-self: center;
+      margin-bottom: 10px;
+}
+/* uso de &:hover */
+.btn-main, 
+  .btn-sign {
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: #0075ff;
+    color: white;
+    border: none;
+    border: 1px solid #0075ff;
+    &:hover{
+        background-color: white;
+        color: #0075ff;
+     }
+}
+
+.main-menu {
+    margin-bottom: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        font-size: 1rem;
+        margin-left: 0.2rem;
+          a {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            }    
+        }   
+    }
+
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .t-center{
+        text-align: center;
+    }
+    .d-none{
+        display: none;
+    }
+    .home-title{
+        font-size: 32px;
+    }
+    .j-center{
+        display: flex;
+        justify-content: center;
+    }
+    .icon-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 700px;
+    }
+    .features-description{
+      border: 1px solid blue;
+      width: 600px;
+      height: auto;
+    }
+    .title,.Marco_div {
+      padding: 20px;
+      
+    }
+    
+
+    
